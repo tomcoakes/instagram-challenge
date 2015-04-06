@@ -13,4 +13,4 @@
 /tmp
 
 # Ignore image posts added to public
-/public/posts/images
+/public/system/posts/*
