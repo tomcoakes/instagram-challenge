@@ -7,8 +7,13 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_parameters)
-    redirect_to root_path
+    @post = Post.new(post_parameters)
+    if @post.save
+      redirect_to root_path  
+    else
+      flash[:notice] = "You must upload a photo"
+      redirect_to :back
+    end
   end
 
   def post_parameters
