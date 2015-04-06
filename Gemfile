@@ -38,5 +38,6 @@ group :development, :test do
   ### Gems added by me
 
   gem 'rspec-rails'
+  gem 'capybara'
 end
 

@@ -1,0 +1,7 @@
+<%= link_to "Add new post", new_post_path %>
+
+<% Post.all.each do |post| %>
+  <section class="post">
+    <%= post.caption %>
+  </section>
+<% end %>
