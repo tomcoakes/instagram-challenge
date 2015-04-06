@@ -2,6 +2,11 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+header {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 .post {
   margin: 20px;
 }
