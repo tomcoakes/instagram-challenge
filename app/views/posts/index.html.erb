@@ -2,6 +2,9 @@
 
 <% Post.all.each do |post| %>
   <section class="post">
-    <%= post.caption %>
+    <figure>
+      <%= image_tag post.image.url(:medium) %>
+      <figcaption><%= post.caption %></figcaption>
+    </figure>
   </section>
 <% end %>

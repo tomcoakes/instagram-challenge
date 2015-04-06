@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   end
 
   def post_parameters
-    params.require(:post).permit(:caption)
+    params.require(:post).permit(:caption, :image)
   end
 
 end
